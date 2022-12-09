@@ -1,0 +1,166 @@
+.footer-form {
+  // margin-top: 12px;
+
+  // width: 570px;
+  // height: 86px;
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: white;
+  }
+}
+
+.container-email {
+  // display: flex;
+
+  &__input {
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    // margin-right: 12px;
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+
+    background-color: inherit;
+    color: white;
+
+    transition: border-color $duration $cubic;
+  }
+  &__input::placeholder {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__input:focus {
+    border-color: $accentColor;
+  }
+}
+
+.footer-btn {
+  // position: relative;
+
+  &__icon {
+    position: absolute;
+    right: 28px;
+    bottom: 13px;
+    fill: white;
+  }
+  &__btn {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    width: 200px;
+    height: 50px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+    color: white;
+    background-color: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+
+    transition: background-color $duration $cubic;
+  }
+  &__btn:hover,
+  &__btn:focus {
+    background-color: $accentColorHover;
+  }
+  &__icon:hover {
+    cursor: pointer;
+  }
+}
+
+// -----------------Mobile---------------
+@media screen and (min-width: $mobile) {
+  .footer-form {
+    &__title {
+    }
+  }
+  .container-email {
+    &__input {
+      margin-bottom: 20px;
+    }
+    &__input::placeholder {
+    }
+  }
+
+  .footer-btn {
+    position: relative;
+    margin: auto;
+    width: 200px;
+    &__icon {
+    }
+    &__btn {
+    }
+  }
+}
+
+// ----------------------Tablet--------------------------------
+@media screen and (min-width: $tablet) {
+  .footer-form {
+    &__title {
+    }
+  }
+  .container-email {
+    &__input {
+    }
+    &__input::placeholder {
+    }
+  }
+
+  .footer-btn {
+    &__icon {
+    }
+    &__btn {
+    }
+  }
+}
+
+// ------------------------Desktop----------------------
+@media screen and (min-width: $desktop) {
+  .footer-form {
+    &__title {
+    }
+  }
+  .container-email {
+    &__input {
+    }
+    &__input::placeholder {
+    }
+  }
+
+  .footer-btn {
+    &__icon {
+    }
+    &__btn {
+    }
+  }
+}

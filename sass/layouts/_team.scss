@@ -1,0 +1,140 @@
+.team {
+  padding-left: 15px;
+  padding-right: 15px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  background: #f5f4fa;
+}
+.team-list {
+  // display: flex;
+  // gap: 30px;
+  &__item {
+    // max-width: 270px;
+
+    // padding-bottom: 30px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background: white;
+  }
+  &__img {
+    margin-bottom: 30px;
+    // height: 260px;
+    // width: 270px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+
+    color: $colMinor;
+  }
+}
+
+.list-socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: background-color $duration $cubic;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: $accentColor;
+  }
+  &__icon {
+    fill: #afb1b8;
+    transition: fill $duration $cubic;
+  }
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: white;
+  }
+}
+
+// -----------------Mobile---------------
+
+@media screen and (min-width: $mobile) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .team-list {
+    &__item {
+      padding-bottom: 24px;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &__img {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+  }
+
+  .list-socials {
+    &__link {
+    }
+    &__icon {
+    }
+  }
+}
+
+// ----------------------Tablet--------------------------------
+
+@media screen and (min-width: $tablet) {
+  .team {
+  }
+  .team-list {
+    &__item {
+    }
+    &__img {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+  }
+
+  .list-socials {
+    &__link {
+    }
+    &__icon {
+    }
+  }
+}
+
+// ------------------------Desktop----------------------
+
+@media screen and (min-width: $desktop) {
+}

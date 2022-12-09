@@ -1,0 +1,25 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  // display: flex;
+  // align-items: center;
+}
+
+// -----------------Mobile---------------
+@media screen and (min-width: $mobile) {
+  .header {
+    padding: 10px 15px;
+  }
+  .container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// ----------------------Tablet--------------------------------
+@media screen and (min-width: $tablet) {
+}
+
+// ------------------------Desktop----------------------
+@media screen and (min-width: $desktop) {
+}

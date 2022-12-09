@@ -1,0 +1,19 @@
+body {
+  font-family: $fontMain;
+  color: $colMain;
+  background-color: $backColorMain;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $mobile;
+  }
+
+  // ----------------------Tablet--------------------------------
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+  }
+
+  // ------------------------Desktop----------------------
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}

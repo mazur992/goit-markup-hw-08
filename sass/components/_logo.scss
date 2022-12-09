@@ -1,0 +1,25 @@
+.logo {
+  font-family: $fontMinor;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: $accentColor;
+  transition: color $duration $cubic;
+
+  &:hover,
+  &:focus {
+    color: #188ce8;
+  }
+
+  &__span {
+    color: #000000;
+    transition: color $duration $cubic;
+  }
+  &:hover &__span,
+  &:focus &__span {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}

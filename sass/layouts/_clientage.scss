@@ -1,0 +1,55 @@
+.clientage {
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  // background-color: $backColorMain;
+}
+
+.list-clientage {
+  // display: flex;
+  // gap: 30px;
+
+  &__link {
+    display: flex;
+    // width: 170px;
+    // height: 92px;
+    justify-content: center;
+    align-items: center;
+    fill: $colFill;
+    cursor: pointer;
+    border: 1px solid $colFill;
+    border-radius: 4px;
+
+    transition: border-color $duration $cubic 50ms, fill $duration $cubic;
+  }
+  &__link:hover,
+  &__link:focus {
+    fill: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+// -----------------Mobile---------------
+
+@media screen and (min-width: $mobile) {
+  .clientage {
+    padding: 60px 15px;
+  }
+  .list-clientage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__link {
+      width: 210px;
+      height: 92px;
+    }
+  }
+}
+
+// ----------------------Tablet--------------------------------
+@media screen and (min-width: $tablet) {
+}
+
+// ------------------------Desktop----------------------
+@media screen and (min-width: $desktop) {
+}

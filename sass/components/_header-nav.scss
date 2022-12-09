@@ -1,0 +1,65 @@
+.header-nav {
+  margin-left: 93px;
+
+  &__list {
+    display: flex;
+  }
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $colMain;
+    transition: color $duration $cubic;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accentColor;
+  }
+
+  &__link--current {
+    color: $accentColor;
+  }
+
+  &__link--current::after {
+    display: block;
+    position: relative;
+
+    top: 32px;
+    content: "";
+    width: inherit;
+    height: 4px;
+
+    border: 1px solid $accentColor;
+    border-radius: 2px;
+    background-color: $accentColor;
+  }
+}
+
+// -----------------Mobile---------------
+@media screen and (min-width: $mobile) {
+  .header-nav {
+    display: none;
+  }
+}
+
+// ----------------------Tablet--------------------------------
+@media screen and (min-width: $tablet) {
+  .header-nav {
+    display: block;
+  }
+}
+
+// ------------------------Desktop----------------------
+@media screen and (min-width: $desktop) {
+}

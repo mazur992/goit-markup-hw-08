@@ -1,0 +1,74 @@
+.address {
+  width: 231px;
+  // margin-right: 70px;
+
+  &__item {
+    // margin-bottom: 9px;
+  }
+
+  &__link {
+    display: inline-block;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color $duration $cubic;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accentColor;
+  }
+
+  &__link--white {
+    color: white;
+  }
+}
+
+// -----------------Mobile---------------
+@media screen and (min-width: $mobile) {
+  .address {
+    margin-bottom: 60px;
+    &__list {
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &__link {
+    }
+    &__link--white {
+    }
+  }
+}
+
+// ----------------------Tablet--------------------------------
+@media screen and (min-width: $tablet) {
+  .address {
+    &__item {
+    }
+
+    &__link {
+    }
+    &__link--white {
+    }
+  }
+}
+
+// ------------------------Desktop----------------------
+@media screen and (min-width: $desktop) {
+  .address {
+    &__item {
+    }
+
+    &__link {
+    }
+    &__link--white {
+    }
+  }
+}
