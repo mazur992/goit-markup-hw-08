@@ -21,8 +21,10 @@
 .menu-container {
   position: absolute;
   display: none;
+  z-index: 99;
   top: 100%;
   left: 0;
+  padding: 48px 40px;
 
   width: 480px;
   height: 796px;
@@ -31,5 +33,69 @@
 
   &.is-open {
     display: block;
+  }
+  &__list-nav {
+    margin-bottom: 306px;
+  }
+  &__item-nav:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link-nav {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+    // margin-bottom: 32px;
+
+    color: inherit;
+  }
+  &__link-nav--current {
+    color: $accentColor;
+  }
+  &__list-contact {
+    margin-bottom: 64px;
+  }
+  &__item-contact {
+    color: $colMinor;
+  }
+  &__item-contact:first-child {
+    color: $accentColor;
+    margin-bottom: 32px;
+  }
+  &__link-contact {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: inherit;
+  }
+  &__list-networks {
+    display: flex;
+  }
+  &__item-networks {
+    padding: 0 10px;
+  }
+  &__link-networks {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: $accentColor;
+  }
+  &__item-networks:first-child {
+    padding-left: 0;
+  }
+  &__item-networks:last-child {
+    padding-right: 0;
+  }
+  &__item-networks + &__item-networks {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
   }
 }

@@ -17,20 +17,114 @@
 
   <body>
     <header class="header container">
-      <a class="logo" href="./index.html"
-        >Web<span class="logo__span">Studio</span></a
-      >
+      <div class="header_mobile">
+        <a class="logo" href="./index.html"
+          >Web<span class="logo__span">Studio</span></a
+        >
+        <button
+          class="menu-button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-container"
+          type="button"
+        >
+          <svg
+            class="menu-button__icon"
+            aria-label="Перемикач мобільного меню"
+            width="40"
+            height="40"
+          >
+            <use
+              class="icon-cross"
+              href="./images/symbol-defs.svg#icon-close_40px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-menu_40px"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu id="menu-container">
+          <ul class="list menu-container__list-nav">
+            <li class="menu-container__item-nav">
+              <a class="menu-container__link-nav" href="./index.html">Студія</a>
+            </li>
+            <li class="menu-container__item-nav">
+              <a
+                class="menu-container__link-nav menu-container__link-nav--current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="menu-container__item-nav">
+              <a class="menu-container__link-nav" href="http://#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list menu-container__list-contact">
+            <li class="menu-container__item-contact">
+              <a class="menu-container__link-contact" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-container__item-contact">
+              <a
+                class="menu-container__link-contact"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list menu-container__list-networks">
+            <li class="menu-container__item-networks">
+              <a
+                class="menu-container__link-networks"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="menu-container__item-networks">
+              <a
+                class="menu-container__link-networks"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li class="menu-container__item-networks">
+              <a
+                class="menu-container__link-networks"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="menu-container__item-networks">
+              <a
+                class="menu-container__link-networks"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
       <nav class="header-nav">
         <ul class="list header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link" href="./index.html">Студія </a>
-          </li>
-          <li class="header-nav__item">
             <a
               class="header-nav__link header-nav__link--current"
-              href="./portfolio.html"
-              >Портфоліо</a
-            >
+              href="./index.html"
+              >Студія
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="./portfolio.html">Портфоліо</a>
           </li>
           <li class="header-nav__item">
             <a class="header-nav__link" href="#">Контакти</a>
@@ -61,19 +155,19 @@
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
           <ul class="list select-list">
-            <li>
+            <li class="select-list__item">
               <button class="select-list__btn" type="button">Усі</button>
             </li>
-            <li>
+            <li class="select-list__item">
               <button class="select-list__btn" type="button">Веб-сайти</button>
             </li>
-            <li>
+            <li class="select-list__item">
               <button class="select-list__btn" type="button">Додатки</button>
             </li>
-            <li>
+            <li class="select-list__item">
               <button class="select-list__btn" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="select-list__item">
               <button class="select-list__btn" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -87,10 +181,10 @@
               >
                 <div class="img-action">
                   <img
+                    class="img-action__photo"
                     src="./images/tehno.jpg"
                     width="370"
                     height="294"
-                    class="network-icon"
                     alt="Технокряк"
                   />
                   <p class="img-action__text">
@@ -114,6 +208,7 @@
               >
                 <div class="img-action">
                   <img
+                    class="img-action__photo"
                     src="./images/new_orlean.jpg"
                     width="370"
                     height="294"
@@ -142,6 +237,7 @@
               >
                 <div class="img-action">
                   <img
+                    class="img-action__photo"
                     src="./images/seafood.jpg"
                     width="370"
                     height="294"
@@ -168,9 +264,8 @@
               >
                 <div class="img-action">
                   <img
+                    class="img-action__photo"
                     src="./images/prime.jpg"
-                    width="370"
-                    height="294"
                     alt="Проєкт Prime"
                   />
                   <p class="img-action__text">
@@ -194,9 +289,8 @@
               >
                 <div class="img-action">
                   <img
+                    class="img-action__photo"
                     src="./images/boxes.jpg"
-                    width="370"
-                    height="294"
                     alt="Проєкт Boxes"
                   />
                   <p class="img-action__text">
@@ -220,9 +314,8 @@
               >
                 <div class="img-action">
                   <img
+                    class="img-action__photo"
                     src="./images/borders.jpg"
-                    width="370"
-                    height="294"
                     alt="Inspiration has no Borders"
                   />
                   <p class="img-action__text">
@@ -246,10 +339,10 @@
               >
                 <div class="img-action">
                   <img
+                    class="img-action__photo"
                     src="./images/limited_edition.jpg"
-                    width="370"
-                    height="294"
-                    alt="Видання Limited Edition"
+                    alt="Видання Limited
+                  Edition"
                   />
                   <p class="img-action__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -272,9 +365,8 @@
               >
                 <div class="img-action">
                   <img
+                    class="img-action__photo"
                     src="./images/lab.jpg"
-                    width="370"
-                    height="294"
                     alt="Проєкт LAB"
                   />
                   <p class="img-action__text">
@@ -298,9 +390,8 @@
               >
                 <div class="img-action">
                   <img
+                    class="img-action__photo"
                     src="./images/business.jpg"
-                    width="370"
-                    height="294"
                     alt="Growing Business"
                   />
                   <p class="img-action__text">
@@ -424,5 +515,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

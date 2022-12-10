@@ -2,9 +2,11 @@ body {
   font-family: $fontMain;
   color: $colMain;
   background-color: $backColorMain;
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (min-width: $mobile) {
-    // width: $mobile;
+    width: $mobile;
   }
 
   // ----------------------Tablet--------------------------------

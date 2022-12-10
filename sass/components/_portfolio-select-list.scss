@@ -1,8 +1,17 @@
 .select-list {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  // display: flex;
+  // gap: 8px;
+  // justify-content: center;
+  margin-bottom: 40px;
+
+  &__item {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 15px;
+  }
+  &__item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
 
   &__btn {
     display: inline-block;
@@ -34,12 +43,14 @@
 }
 
 .list-filtr {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-
+  // display: flex;
+  // gap: 30px;
+  // flex-wrap: wrap;
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
   &__item {
-    max-width: 370px;
+    max-width: 450px;
   }
 
   &__link {
@@ -63,6 +74,11 @@
   position: relative;
   overflow: hidden;
 
+  &__photo {
+    max-width: 450px;
+    max-height: 404px;
+  }
+
   &__text {
     position: absolute;
     top: 0;
@@ -85,7 +101,7 @@
 }
 
 .name-card {
-  width: 370px;
+  width: 450px;
   border: 1px solid #eeeeee;
   border-top: none;
 
