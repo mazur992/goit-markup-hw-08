@@ -1,8 +1,8 @@
 .container {
   // width: 1200px;
   // margin: 0 auto;
-  // padding-left: 15px;
-  // padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 // .container.adaptive {
 //   max-width: 320px;
@@ -11,7 +11,7 @@
 // -----------------Mobile---------------
 @media screen and (min-width: $mobile) {
   .container {
-    max-width: $mobile;
+    width: $mobile;
   }
 }
 

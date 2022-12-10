@@ -1,18 +1,22 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   // display: flex;
   // align-items: center;
+  .header_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 // -----------------Mobile---------------
 @media screen and (min-width: $mobile) {
   .header {
-    padding: 10px 15px;
   }
-  .container-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .header.container {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

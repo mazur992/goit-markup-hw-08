@@ -1,11 +1,15 @@
 .footer {
   // padding-top: 60px;
   // padding-bottom: 60px;
+  padding: 60px 15px;
+  text-align: center;
 
   background: #2f303a;
 
   .container--footer-flex {
-    // display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -24,12 +28,7 @@
 // -----------------Mobile---------------
 @media screen and (min-width: $mobile) {
   .footer {
-    padding: 60px 15px;
-    text-align: center;
     .container--footer-flex {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
   }
   .logo--bottom-gap {

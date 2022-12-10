@@ -1,9 +1,13 @@
 .address {
-  width: 231px;
+  // width: 231px;
   // margin-right: 70px;
+  margin-bottom: 60px;
 
   &__item {
     // margin-bottom: 9px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
   }
 
   &__link {
@@ -33,11 +37,7 @@
 // -----------------Mobile---------------
 @media screen and (min-width: $mobile) {
   .address {
-    margin-bottom: 60px;
     &__list {
-    }
-    &__item:not(:last-child) {
-      margin-bottom: 8px;
     }
 
     &__link {

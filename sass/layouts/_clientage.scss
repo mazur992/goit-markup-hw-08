@@ -1,17 +1,21 @@
 .clientage {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-  // background-color: $backColorMain;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $backColorMain;
 }
 
 .list-clientage {
-  // display: flex;
-  // gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 
   &__link {
     display: flex;
     // width: 170px;
     // height: 92px;
+    width: 210px;
+    height: 92px;
+
     justify-content: center;
     align-items: center;
     fill: $colFill;
@@ -32,16 +36,9 @@
 
 @media screen and (min-width: $mobile) {
   .clientage {
-    padding: 60px 15px;
   }
   .list-clientage {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
     &__link {
-      width: 210px;
-      height: 92px;
     }
   }
 }

@@ -17,12 +17,23 @@
 
   <body>
     <header class="header container">
-      <div class="container-menu">
+      <div class="header_mobile">
         <a class="logo" href="./index.html"
           >Web<span class="logo__span">Studio</span></a
         >
-        <button class="mobile-menu" is-open type="button">
-          <svg class="mobile-menu__icon" width="40" height="40">
+        <button
+          class="menu-button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-container"
+          type="button"
+        >
+          <svg
+            class="menu-button__icon"
+            aria-label="Перемикач мобільного меню"
+            width="40"
+            height="40"
+          >
             <use
               class="icon-cross"
               href="./images/symbol-defs.svg#icon-close_40px"
@@ -33,6 +44,51 @@
             ></use>
           </svg>
         </button>
+        <div class="menu-container" data-menu id="menu-container">
+          <ul class="list container-menu__list-nav">
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+          <ul class="list container-menu__list-contact">
+            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="list container-menu__list-networks">
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
       <nav class="header-nav">
         <ul class="list header-nav__list">

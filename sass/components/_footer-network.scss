@@ -2,6 +2,7 @@
   // width: 206px;
   // margin-top: 12px;
   // margin-right: 93px;
+  margin-bottom: 60px;
 
   &__title {
     font-size: 14px;
@@ -42,7 +43,6 @@
 // -----------------Mobile---------------
 @media screen and (min-width: $mobile) {
   .footer-network {
-    margin-bottom: 60px;
     &__title {
     }
     &__list {
