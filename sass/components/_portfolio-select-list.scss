@@ -76,7 +76,7 @@
 
   &__photo {
     max-width: 450px;
-    max-height: 404px;
+    max-height: 294px;
   }
 
   &__text {
@@ -125,3 +125,100 @@
     color: $colMinor;
   }
 }
+
+// -----------------Mobile---------------
+@media screen and (min-width: $mobile) {
+}
+
+// ----------------------Tablet--------------------------------
+@media screen and (min-width: $tablet) {
+  .select-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    &__item {
+      margin-bottom: 0;
+    }
+
+    &__btn {
+    }
+  }
+}
+.list-filtr {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  &__item {
+    max-width: 354px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  &__link {
+  }
+}
+.img-action {
+  &__photo {
+    max-width: 354px;
+  }
+
+  &__text {
+  }
+}
+
+.name-card {
+  width: 354px;
+
+  &__title {
+  }
+  &__text {
+  }
+}
+
+// ------------------------Desktop----------------------
+@media screen and (min-width: $desktop) {
+}
+
+// .select-list {
+//   display: flex;
+//   gap: 8px;
+//   justify-content: center;
+//   &__item {
+//   }
+
+//   &__btn {
+//   }
+//   }
+
+// .list-filtr {
+//   display: flex;
+//   gap: 30px;
+//   flex-wrap: wrap;
+//   &__item {
+//   }
+
+//   &__link {
+//   }
+// }
+
+// .img-action {
+
+//   &__photo {
+//     max-width: 354px;
+//   }
+
+//   &__text {
+//   }
+// }
+
+// .name-card {
+//   width: 354px;
+
+//   &__title {
+//   }
+//   &__text {
+//   }
+// }

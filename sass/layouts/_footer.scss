@@ -41,7 +41,11 @@
 // ----------------------Tablet--------------------------------
 @media screen and (min-width: $tablet) {
   .footer {
+    padding: 60px 89px 60px 76px;
     .container--footer-flex {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
     }
   }
   .logo--bottom-gap {

@@ -11,11 +11,11 @@ body {
 
   // ----------------------Tablet--------------------------------
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
+    width: $tablet;
   }
 
   // ------------------------Desktop----------------------
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    width: $desktop;
   }
 }

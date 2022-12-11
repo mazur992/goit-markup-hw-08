@@ -113,7 +113,11 @@
   .team {
   }
   .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     &__item {
+      max-width: 354px;
     }
     &__img {
     }
@@ -122,6 +126,9 @@
     }
 
     &__text {
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 

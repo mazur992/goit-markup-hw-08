@@ -1,5 +1,5 @@
 .header-nav {
-  margin-left: 93px;
+  margin-left: 87px;
 
   &__list {
     display: flex;
@@ -50,7 +50,6 @@
 // -----------------Mobile---------------
 @media screen and (min-width: $mobile) {
   .header-nav {
-    display: none;
   }
 }
 

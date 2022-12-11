@@ -80,6 +80,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     &__title {
+      max-width: 360px;
     }
 
     &__btn {

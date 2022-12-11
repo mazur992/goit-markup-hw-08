@@ -5,6 +5,9 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 .menu-button:focus {
 }

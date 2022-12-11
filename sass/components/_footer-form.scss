@@ -126,11 +126,13 @@
 // ----------------------Tablet--------------------------------
 @media screen and (min-width: $tablet) {
   .footer-form {
+    margin: auto;
     &__title {
     }
   }
   .container-email {
     &__input {
+      width: 450px;
     }
     &__input::placeholder {
     }
