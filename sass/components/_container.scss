@@ -11,7 +11,7 @@
 // -----------------Mobile---------------
 @media screen and (min-width: $mobile) {
   .container {
-    width: $mobile;
+    max-width: $mobile;
   }
 }
 

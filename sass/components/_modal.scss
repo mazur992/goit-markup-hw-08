@@ -15,6 +15,11 @@
   background: $backColorMain;
   box-shadow: $shadow;
   border-radius: 4px;
+
+  @media screen and (min-width: $tablet) {
+    top: 208px;
+    left: 159px;
+  }
 }
 
 .backdrop-form {
