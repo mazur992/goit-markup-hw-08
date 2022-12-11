@@ -1,9 +1,4 @@
 .footer-form {
-  // margin-top: 12px;
-
-  // width: 570px;
-  // height: 86px;
-
   &__title {
     display: block;
     margin-bottom: 20px;
@@ -18,14 +13,11 @@
 }
 
 .container-email {
-  // display: flex;
-
   &__input {
     padding: 0;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 12px;
-    // margin-right: 12px;
     margin-bottom: 20px;
 
     width: 358px;
@@ -61,7 +53,6 @@
   position: relative;
   margin: auto;
   max-width: 200px;
-  // position: relative;
 
   &__icon {
     position: absolute;
@@ -149,11 +140,18 @@
 // ------------------------Desktop----------------------
 @media screen and (min-width: $desktop) {
   .footer-form {
+    margin-top: 12px;
+
+    width: 570px;
+    height: 86px;
     &__title {
     }
   }
   .container-email {
+    display: flex;
     &__input {
+      margin-right: 12px;
+      margin-bottom: 0;
     }
     &__input::placeholder {
     }

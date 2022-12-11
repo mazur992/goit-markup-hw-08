@@ -1,7 +1,4 @@
 .select-list {
-  // display: flex;
-  // gap: 8px;
-  // justify-content: center;
   margin-bottom: 40px;
 
   &__item {
@@ -43,14 +40,11 @@
 }
 
 .list-filtr {
-  // display: flex;
-  // gap: 30px;
-  // flex-wrap: wrap;
   &__item:not(:last-child) {
     margin-bottom: 30px;
   }
   &__item {
-    max-width: 450px;
+    width: 450px;
   }
 
   &__link {
@@ -75,8 +69,8 @@
   overflow: hidden;
 
   &__photo {
-    max-width: 450px;
-    max-height: 294px;
+    width: 450px;
+    height: 294px;
   }
 
   &__text {
@@ -127,11 +121,16 @@
 }
 
 // -----------------Mobile---------------
-@media screen and (min-width: $mobile) {
+@media screen and (max-width: ($tablet - 1px)) {
+  .list-filtr {
+    &__item {
+      width: 450px;
+    }
+  }
 }
 
 // ----------------------Tablet--------------------------------
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
   .select-list {
     display: flex;
     gap: 8px;
@@ -145,80 +144,98 @@
     &__btn {
     }
   }
+  .list-filtr {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    &__item {
+      width: 354px;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+  .img-action {
+    &__photo {
+      width: 354px;
+      height: 294px;
+    }
+
+    &__text {
+    }
+  }
+
+  .name-card {
+    width: 354px;
+    flex-grow: 1;
+
+    &__title {
+    }
+    &__text {
+    }
+  }
 }
-.list-filtr {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  &__item {
-    max-width: 354px;
-  }
-  &__item:not(:last-child) {
-    margin-bottom: 0;
-  }
 
-  &__link {
-  }
-}
-.img-action {
-  &__photo {
-    max-width: 354px;
-  }
-
-  &__text {
-  }
-}
-
-.name-card {
-  width: 354px;
-
-  &__title {
-  }
-  &__text {
-  }
+@media screen and (min-width: $desktop) {
 }
 
 // ------------------------Desktop----------------------
 @media screen and (min-width: $desktop) {
+  .select-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+    &__item {
+    }
+
+    &__btn {
+    }
+  }
+
+  .list-filtr {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    &__item {
+      display: inline-flex;
+      max-width: 370px;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &__link {
+    }
+  }
+
+  .img-action {
+    &__photo {
+      width: 370px;
+      height: 294px;
+    }
+
+    &__text {
+    }
+  }
+
+  .name-card {
+    width: 370px;
+
+    &__title {
+    }
+    &__text {
+    }
+  }
 }
-
-// .select-list {
-//   display: flex;
-//   gap: 8px;
-//   justify-content: center;
-//   &__item {
-//   }
-
-//   &__btn {
-//   }
-//   }
-
-// .list-filtr {
-//   display: flex;
-//   gap: 30px;
-//   flex-wrap: wrap;
-//   &__item {
-//   }
-
-//   &__link {
-//   }
-// }
-
-// .img-action {
-
-//   &__photo {
-//     max-width: 354px;
-//   }
-
-//   &__text {
-//   }
-// }
-
-// .name-card {
-//   width: 354px;
-
-//   &__title {
-//   }
-//   &__text {
-//   }
-// }

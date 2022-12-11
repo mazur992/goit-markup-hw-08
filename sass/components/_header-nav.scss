@@ -62,4 +62,8 @@
 
 // ------------------------Desktop----------------------
 @media screen and (min-width: $desktop) {
+  .header-nav {
+    margin-left: 92px;
+    margin-right: auto;
+  }
 }

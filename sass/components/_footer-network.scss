@@ -1,7 +1,4 @@
 .footer-network {
-  // width: 206px;
-  // margin-top: 12px;
-  // margin-right: 93px;
   margin-bottom: 60px;
 
   &__title {
@@ -73,6 +70,11 @@
 // ------------------------Desktop----------------------
 @media screen and (min-width: $desktop) {
   .footer-network {
+    width: 206px;
+    margin-top: 12px;
+    margin-right: 93px;
+    margin-bottom: 0px;
+    margin-left: 0;
     &__title {
     }
     &__list {

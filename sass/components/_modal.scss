@@ -1,24 +1,22 @@
 .modal {
   position: absolute;
-  // top: 50%;
-  // left: 50%;
-  top: 93px;
-  left: 15px;
-  // width: 528px;
-  // height: 581px;
-  max-width: 450px;
+
+  top: 50%;
+  left: 50%;
+  width: 450px;
   height: 609px;
-  // transform: translate(-50%, -50%) scale(1);
-  transform: scale(1);
+
+  transform: translate(-50%, -50%) scale(1);
   transition: transform $duration $cubic;
 
   background: $backColorMain;
   box-shadow: $shadow;
   border-radius: 4px;
 
-  @media screen and (min-width: $tablet) {
-    top: 208px;
-    left: 159px;
+  // ------------------------Desktop----------------------
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -29,13 +27,18 @@
     margin-bottom: 12px;
 
     font-size: 20px;
-    // line-height: 1.15;
+
     line-height: 1.5;
 
     text-align: center;
     letter-spacing: 0.03em;
 
     color: $colMain;
+
+    // ------------------------Desktop----------------------
+    @media screen and (min-width: $desktop) {
+      line-height: 1.15;
+    }
   }
 }
 
@@ -101,7 +104,7 @@
     max-width: 448px;
     height: 120px;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.14;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
@@ -118,8 +121,8 @@
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
@@ -175,8 +178,13 @@
     margin-left: 7px;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.14;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
 
     letter-spacing: 0.03em;
 
@@ -215,5 +223,31 @@
   &__icon:hover,
   &__icon:focus {
     fill: $accentColor;
+  }
+}
+
+// ------------------------Desktop----------------------
+@media screen and (min-width: $desktop) {
+  .backdrop-element {
+    &__name {
+    }
+    &__input {
+      min-width: 448px;
+    }
+
+    &__icon {
+    }
+    &--bottom {
+    }
+
+    &__textarea {
+      line-height: 1.17;
+    }
+    &__textarea:focus {
+    }
+    &__textarea::placeholder {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 }
