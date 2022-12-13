@@ -763,8 +763,8 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-hero.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
@@ -811,7 +811,27 @@ img {
   background: #188ce8;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url("../images/hero-bg-image/hero480x1.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-bg-image/hero480x2.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: url("../images/hero-bg-image/hero768x1.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-bg-image/hero768x2.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__title {
     max-width: 360px;
   }
@@ -821,7 +841,15 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 100%;
+    background-image: url("../images/hero-bg-image/hero1200x1.jpg");
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-bg-image/hero1200x2.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero__title {
     max-width: 696px;
     font-size: 44px;
