@@ -1,13 +1,5 @@
 .select-list {
-  margin-bottom: 40px;
-
   &__item {
-    display: inline-block;
-    margin-left: 8px;
-    margin-bottom: 15px;
-  }
-  &__item:nth-child(n + 4) {
-    margin-bottom: 0;
   }
 
   &__btn {
@@ -40,9 +32,6 @@
 }
 
 .list-filtr {
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
   &__item {
     width: 450px;
   }
@@ -68,11 +57,6 @@
   position: relative;
   overflow: hidden;
 
-  &__photo {
-    width: 450px;
-    height: 294px;
-  }
-
   &__text {
     position: absolute;
     top: 0;
@@ -95,7 +79,6 @@
 }
 
 .name-card {
-  width: 450px;
   border: 1px solid #eeeeee;
   border-top: none;
 
@@ -122,11 +105,39 @@
 
 // -----------------Mobile---------------
 @media screen and (max-width: ($tablet - 1px)) {
+  .select-list {
+    margin-bottom: 40px;
+
+    &__item {
+      display: inline-block;
+      margin-left: 8px;
+      margin-bottom: 15px;
+    }
+    &__item:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+
+    &__btn {
+    }
+  }
   .list-filtr {
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
     &__item {
       width: 450px;
     }
   }
+
+  .img-action {
+    &__photo {
+      width: 450px;
+      height: 294px;
+    }
+  }
+}
+.name-card {
+  width: 450px;
 }
 
 // ----------------------Tablet--------------------------------
@@ -182,9 +193,6 @@
     &__text {
     }
   }
-}
-
-@media screen and (min-width: $desktop) {
 }
 
 // ------------------------Desktop----------------------

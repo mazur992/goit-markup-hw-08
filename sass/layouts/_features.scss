@@ -45,7 +45,8 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+// -----------------Mobile---------------
+@media screen and (max-width: ($tablet - 1px)) {
   .features {
     &-list {
     }
@@ -62,7 +63,8 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+// ----------------------Tablet--------------------------------
+@media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
   .features {
     &-list {
       display: flex;
@@ -83,11 +85,16 @@
     }
   }
 }
-@media screen and (min-width: 1200px) {
+
+// ------------------------Desktop----------------------
+@media screen and (min-width: $desktop) {
   .features {
     padding-top: 94px;
     padding-bottom: 94px;
     &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
     }
 
     &-list__item {
@@ -96,6 +103,7 @@
     &-list__icon {
     }
     &-list__title {
+      text-align: left;
     }
 
     &-list__text {

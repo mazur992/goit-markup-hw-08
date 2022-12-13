@@ -11,8 +11,6 @@
 
   &__link {
     display: flex;
-    // width: 170px;
-    // height: 92px;
     width: 210px;
     height: 92px;
 
@@ -34,7 +32,7 @@
 
 // -----------------Mobile---------------
 
-@media screen and (min-width: $mobile) {
+@media screen and (max-width: ($desktop - 1px)) {
   .clientage {
   }
   .list-clientage {
@@ -44,12 +42,8 @@
 }
 
 // ----------------------Tablet--------------------------------
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
   .list-clientage {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
     &__link {
       width: 226px;
     }
