@@ -33,7 +33,6 @@
 
 .list-filtr {
   &__item {
-    width: 450px;
   }
 
   &__link {
@@ -125,19 +124,15 @@
       margin-bottom: 30px;
     }
     &__item {
-      width: 450px;
     }
   }
 
   .img-action {
     &__photo {
-      width: 450px;
-      height: 294px;
     }
   }
 }
 .name-card {
-  width: 450px;
 }
 
 // ----------------------Tablet--------------------------------
@@ -159,13 +154,9 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+
     &__item {
-      width: 354px;
-      margin-left: 0;
-      margin-bottom: 0;
-    }
-    &__item:not(:last-child) {
-      margin-bottom: 0;
+      width: calc(100% / 2 - 15px);
     }
 
     &__link {
@@ -176,8 +167,6 @@
   }
   .img-action {
     &__photo {
-      width: 354px;
-      height: 294px;
     }
 
     &__text {
@@ -217,6 +206,7 @@
     &__item {
       display: inline-flex;
       max-width: 370px;
+
       margin-left: 0;
       margin-bottom: 0;
     }
@@ -230,8 +220,6 @@
 
   .img-action {
     &__photo {
-      width: 370px;
-      height: 294px;
     }
 
     &__text {

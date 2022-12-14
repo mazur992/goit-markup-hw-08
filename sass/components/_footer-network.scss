@@ -38,11 +38,14 @@
 }
 
 // -----------------Mobile---------------
-@media screen and (min-width: $mobile) {
+@media screen and (max-width: ($tablet - 1px)) {
   .footer-network {
     &__title {
     }
     &__list {
+      @media screen and (max-width: 250px) {
+        display: inline;
+      }
     }
     &__link {
     }
@@ -54,7 +57,7 @@
 // ----------------------Tablet--------------------------------
 @media screen and (min-width: $tablet) {
   .footer-network {
-    margin-left: auto;
+    // margin-left: auto;
     margin-top: 5px;
     &__title {
     }

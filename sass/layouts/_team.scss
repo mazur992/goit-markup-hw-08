@@ -37,6 +37,10 @@
   gap: 10px;
   justify-content: center;
 
+  @media screen and (max-width: (254px)) {
+    display: inline;
+  }
+
   &__link {
     display: flex;
     width: 44px;
@@ -80,8 +84,6 @@
       margin-bottom: 30px;
     }
     &__img {
-      width: 450px;
-      height: 460px;
     }
 
     &__title {
@@ -108,8 +110,6 @@
       padding-bottom: 24px;
     }
     &__img {
-      width: 354px;
-      height: 374px;
     }
 
     &__title {
@@ -136,8 +136,6 @@
       padding-bottom: 30px;
     }
     &__img {
-      width: 270px;
-      height: 260px;
     }
 
     &__title {

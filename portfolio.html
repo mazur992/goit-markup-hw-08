@@ -16,99 +16,14 @@
   </head>
 
   <body>
-    <header class="header container">
-      <div class="header_mobile">
-        <a class="logo" href="./index.html"
-          >Web<span class="logo__span">Studio</span></a
-        >
-        <button
-          class="menu-button js-open-menu"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          type="button"
-        >
-          <svg
-            class="menu-button__icon"
-            aria-label="Перемикач мобільного меню"
-            width="40"
-            height="40"
+    <header class="header">
+      <div class="container">
+        <div class="header_mobile">
+          <a class="logo" href="./index.html"
+            >Web<span class="logo__span">Studio</span></a
           >
-            <use
-              class="icon-menu"
-              href="./images/symbol-defs.svg#icon-menu_40px"
-            ></use>
-          </svg>
-        </button>
-        <div class="menu-container js-menu-container">
-          <ul class="list menu-container__list-nav">
-            <li class="menu-container__item-nav">
-              <a class="menu-container__link-nav" href="./index.html">Студія</a>
-            </li>
-            <li class="menu-container__item-nav">
-              <a
-                class="menu-container__link-nav menu-container__link-nav--current"
-                href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="menu-container__item-nav">
-              <a class="menu-container__link-nav" href="http://#">Контакти</a>
-            </li>
-          </ul>
-          <ul class="list menu-container__list-contact">
-            <li class="menu-container__item-contact">
-              <a class="menu-container__link-contact" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="menu-container__item-contact">
-              <a
-                class="menu-container__link-contact"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="list menu-container__list-networks">
-            <li class="menu-container__item-networks">
-              <a
-                class="menu-container__link-networks"
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Instagram</a
-              >
-            </li>
-            <li class="menu-container__item-networks">
-              <a
-                class="menu-container__link-networks"
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Twitter</a
-              >
-            </li>
-            <li class="menu-container__item-networks">
-              <a
-                class="menu-container__link-networks"
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Facebook</a
-              >
-            </li>
-            <li class="menu-container__item-networks">
-              <a
-                class="menu-container__link-networks"
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
           <button
-            class="menu-button menu-button--cross-position js-close-menu"
+            class="menu-button js-open-menu"
             aria-expanded="false"
             aria-controls="menu-container"
             type="button"
@@ -120,48 +35,137 @@
               height="40"
             >
               <use
-                class="icon-cross"
-                href="./images/symbol-defs.svg#icon-close_40px"
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-menu_40px"
               ></use>
             </svg>
           </button>
+          <div class="menu-container js-menu-container">
+            <ul class="list menu-container__list-nav">
+              <li class="menu-container__item-nav">
+                <a class="menu-container__link-nav" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="menu-container__item-nav">
+                <a
+                  class="menu-container__link-nav menu-container__link-nav--current"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="menu-container__item-nav">
+                <a class="menu-container__link-nav" href="http://#">Контакти</a>
+              </li>
+            </ul>
+            <ul class="list menu-container__list-contact">
+              <li class="menu-container__item-contact">
+                <a class="menu-container__link-contact" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu-container__item-contact">
+                <a
+                  class="menu-container__link-contact"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list menu-container__list-networks">
+              <li class="menu-container__item-networks">
+                <a
+                  class="menu-container__link-networks"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="menu-container__item-networks">
+                <a
+                  class="menu-container__link-networks"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="menu-container__item-networks">
+                <a
+                  class="menu-container__link-networks"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="menu-container__item-networks">
+                <a
+                  class="menu-container__link-networks"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+            <button
+              class="menu-button menu-button--cross-position js-close-menu"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              type="button"
+            >
+              <svg
+                class="menu-button__icon"
+                aria-label="Перемикач мобільного меню"
+                width="40"
+                height="40"
+              >
+                <use
+                  class="icon-cross"
+                  href="./images/symbol-defs.svg#icon-close_40px"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-      <nav class="header-nav">
-        <ul class="list header-nav__list">
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="./index.html">Студія </a>
-          </li>
-          <li class="header-nav__item">
-            <a
-              class="header-nav__link header-nav__link--current"
-              href="./portfolio.html"
-              >Портфоліо</a
+        <nav class="header-nav">
+          <ul class="list header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./index.html">Студія </a>
+            </li>
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header-nav__link--current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Контакти</a>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="list contacts">
-        <li class="contacts__item">
-          <a class="contacts__link" href="mailto:info@devstudio.com">
-            <svg class="contacts__icon" width="16" height="12">
-              <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__link" href="tel:+380961111111">
-            <svg class="contacts__icon" width="10" height="16">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="portfolio">
@@ -453,108 +457,112 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container container--footer-flex">
-        <div class="address-container">
-          <a class="logo logo--bottom-gap" href="./index.html"
-            >Web<span class="logo__span logo__span--white">Studio</span></a
-          >
-          <address class="address">
-            <ul class="list address__list">
-              <li class="address__item">
+      <div class="container">
+        <div class="container--footer-flex">
+          <div class="address-container">
+            <a class="logo logo--bottom-gap" href="./index.html"
+              >Web<span class="logo__span logo__span--white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="list address__list">
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--white"
+                    href="https://goo.gl/maps/1E44ymxB3e4bCkxy7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-network">
+            <h2 class="footer-network__title">приєднуйтесь</h2>
+            <ul class="list footer-network__list">
+              <li>
                 <a
-                  class="address__link address__link--white"
-                  href="https://goo.gl/maps/1E44ymxB3e4bCkxy7"
+                  class="footer-network__link"
+                  href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
+                  <svg class="footer-network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li>
+                <a
+                  class="footer-network__link"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="footer-network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+              <li>
+                <a
+                  class="footer-network__link"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="footer-network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer-network__link"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer-network__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-network">
-          <h2 class="footer-network__title">приєднуйтесь</h2>
-          <ul class="list footer-network__list">
-            <li>
-              <a
-                class="footer-network__link"
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer-network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="footer-network__link"
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer-network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="footer-network__link"
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer-network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="footer-network__link"
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="footer-network__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form class="footer-form">
-          <label for="email-label" class="footer-form__title"
-            >Підпишіться на розсилку</label
-          >
-          <div class="container-email">
-            <input
-              class="container-email__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              id="email-label"
-            />
-            <div class="footer-btn">
-              <button class="footer-btn__btn" type="submit">Підписатися</button>
-              <svg class="footer-btn__icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </div>
           </div>
-        </form>
+          <form class="footer-form">
+            <label for="email-label" class="footer-form__title"
+              >Підпишіться на розсилку</label
+            >
+            <div class="container-email">
+              <input
+                class="container-email__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="email-label"
+              />
+              <div class="footer-btn">
+                <button class="footer-btn__btn" type="submit">
+                  Підписатися
+                  <svg class="footer-btn__icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>

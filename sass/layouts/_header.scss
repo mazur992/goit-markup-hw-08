@@ -12,6 +12,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: (214px)) {
+      display: inline;
+    }
   }
 }
 
@@ -20,7 +23,7 @@
   .header_mobile {
     display: block;
   }
-  .header {
+  .header .container {
     display: flex;
     align-items: center;
   }
@@ -28,7 +31,7 @@
 
 // ------------------------Desktop----------------------
 @media screen and (min-width: $desktop) {
-  .header {
+  .header .container {
     display: flex;
     align-items: center;
   }

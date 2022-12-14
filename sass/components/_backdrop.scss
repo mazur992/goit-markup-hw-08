@@ -7,6 +7,10 @@
   transform: scale(1);
 
   background: $backColorModal;
+  @media screen and (max-width: $mobile) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .backdrop.is-hidden {

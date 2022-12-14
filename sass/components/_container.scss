@@ -3,26 +3,30 @@
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
 
   @media screen and (min-width: $mobile) and (max-width: ($tablet - 1px)) {
-    max-width: $mobile;
+    width: $mobile;
   }
   @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
-    max-width: $tablet;
+    width: $tablet;
   }
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    width: $desktop;
   }
 }
 
-// -----------------Mobile---------------
-@media screen and (min-width: $mobile) {
+// ------------------------Mobile----------------------
+@media screen and (min-width: $mobile) and (max-width: ($tablet - 1px)) {
+  // max-width: $mobile;
 }
 
 // ----------------------Tablet--------------------------------
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+  // max-width: $tablet;
 }
 
 // ------------------------Desktop----------------------
 @media screen and (min-width: $desktop) {
+  // max-width: 1600px;
 }

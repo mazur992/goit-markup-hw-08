@@ -4,21 +4,4 @@ body {
   background-color: $backColorMain;
   margin-right: auto;
   margin-left: auto;
-
-  @media screen and (min-width: $mobile) and (max-width: ($tablet - 1px)) {
-    max-width: $mobile;
-  }
-
-  // ----------------------Tablet--------------------------------
-  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
-    max-width: $tablet;
-  }
-
-  // ------------------------Desktop----------------------
-  @media screen and (min-width: $desktop) {
-    max-width: 1600px;
-  }
-}
-body.is-open {
-  overflow: hidden;
 }
