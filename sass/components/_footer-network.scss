@@ -12,6 +12,7 @@
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
   }
   &__link {
@@ -43,8 +44,8 @@
     &__title {
     }
     &__list {
-      @media screen and (max-width: 250px) {
-        display: inline;
+      @media screen and (max-width: 181px) {
+        justify-content: center;
       }
     }
     &__link {
