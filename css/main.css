@@ -1187,21 +1187,19 @@ img {
   .list-clientage__item {
     width: calc((100% - 60px) / 3);
   }
-  .list-clientage__link {
-    width: 226px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .clientage {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .list-clientage__item {
+    width: calc((100% - 150px) / 6);
+  }
   .list-clientage__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 170px;
-    height: 92px;
   }
 }
 .footer {

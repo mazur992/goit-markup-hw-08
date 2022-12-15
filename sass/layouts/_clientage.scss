@@ -54,7 +54,6 @@
       width: calc((100% - 60px) / 3);
     }
     &__link {
-      width: 226px;
     }
   }
 }
@@ -66,10 +65,11 @@
     padding-bottom: 94px;
   }
   .list-clientage {
+    &__item {
+      width: calc((100% - (5 * 30px)) / 6);
+    }
     &__link {
       display: flex;
-      width: 170px;
-      height: 92px;
     }
   }
 }
