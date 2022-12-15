@@ -1155,9 +1155,6 @@ img {
       flex-wrap: wrap;
   gap: 30px;
 }
-.list-clientage__item {
-  width: calc((100% - 30px) / 2);
-}
 .list-clientage__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,7 +1178,15 @@ img {
   border-color: #2196f3;
 }
 
+@media screen and (max-width: 1199px) {
+  .list-clientage__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-clientage__item {
+    width: calc((100% - 60px) / 3);
+  }
   .list-clientage__link {
     width: 226px;
   }

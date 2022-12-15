@@ -12,9 +12,6 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  &__item {
-    width: calc((100% - 30px) / 2);
-  }
   &__link {
     display: flex;
 
@@ -42,6 +39,9 @@
   .clientage {
   }
   .list-clientage {
+    &__item {
+      width: calc((100% - 30px) / 2);
+    }
     &__link {
     }
   }
@@ -50,6 +50,9 @@
 // ----------------------Tablet--------------------------------
 @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
   .list-clientage {
+    &__item {
+      width: calc((100% - 60px) / 3);
+    }
     &__link {
       width: 226px;
     }
